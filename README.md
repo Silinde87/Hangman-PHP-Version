@@ -6,7 +6,7 @@
  He desarrollado una versión propia del clásico juego del ahorcado en PHP, con inserciones de CSS para el estilo y Javascript para las validaciones de datos.
  Se trata de una primera práctica de desarrollo en PHP combinando varios lenguajes de programación. :video_game:
  
- >I've developed my own version of classic hangman game in PHP, with CSS inserts for the style and Javascript for data validations
+ >I've developed my own version of classic hangman game in PHP, with CSS inserts for the style and Javascript for data validations.
  >It's my first PHP development combining some programming lenguages. :video_game:
 
 ## How to use it
