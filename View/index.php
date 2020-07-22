@@ -41,7 +41,7 @@
     //Print the word hidding not known letters.
     echo $_SESSION["hg"]->printWord();
     //Show the appropiate picture based on remaining attempts.
-    ?><br><br><img class="prop" src="/HangManGame/Sources/<?php echo $_SESSION["hg"]->showingPicture()?>.webp"><?php    
+    ?><br><br><img class="prop" src="/HangManGame/Sources/<?php echo $_SESSION["hg"]->showingPicture()?>.jpg"><?php    
     //Show the letters used.
     echo '<br><br>Letras utilizadas: <br><br>'.$_SESSION["hg"]->showLettersUsed($_SESSION["hg"]->charInPlay). '<br><br>';
   }else{
