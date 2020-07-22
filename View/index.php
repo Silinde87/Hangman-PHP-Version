@@ -1,8 +1,3 @@
-<!-- TO-DO LIST
-- Añadir funcionalidad de mostrar letras ya escritas  
-- Eliminar lineas innecesarias
--->
-
 <?php 
   include $_SERVER['DOCUMENT_ROOT']."/HangManGame/Model/HangmanGameFunctions.php";
   session_start();   
@@ -45,7 +40,9 @@
     $_SESSION["hg"]->checkingFinalScore();
     //Print the word hidding not known letters.
     echo $_SESSION["hg"]->printWord();
+    //Show the appropiate picture based on remaining attempts.
     ?><br><br><img class="prop" src="/HangManGame/Sources/<?php echo $_SESSION["hg"]->showingPicture()?>.webp"><?php    
+    //Show the letters used.
     echo '<br><br>Letras utilizadas: <br><br>'.$_SESSION["hg"]->showLettersUsed($_SESSION["hg"]->charInPlay). '<br><br>';
   }else{
     //Check button is used and game isn't started.
