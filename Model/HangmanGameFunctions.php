@@ -23,11 +23,20 @@ class HangmanGameFunctions{
         Return value: String with a random word
     */
     function choosingWord(){
-        $f_contents = file($_SERVER['DOCUMENT_ROOT']."/HangManGame/Sources/wordlist.txt");
-        $word = $f_contents[rand(0, count($f_contents) - 1)];
-        $word = strtoupper($word);
-        $imgNum = 22;
-        return $word;
+        if(file_exists($_SERVER['DOCUMENT_ROOT']."/HangManGame/Sources/wordlist.txt")){
+            $f_contents = file($_SERVER['DOCUMENT_ROOT']."/HangManGame/Sources/wordlist.txt");
+            $word = $f_contents[rand(0, count($f_contents) - 1)];
+            $word = strtoupper($word);
+            $imgNum = 22;
+            return $word;
+        }else{            
+            echo '<script type="application/javascript">
+                alert("Falta el archivo de texto");
+            </script>';
+            return;
+        }
+        
+
     }
 
     /*
