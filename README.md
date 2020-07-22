@@ -7,7 +7,7 @@
  Se trata de una primera práctica de desarrollo en PHP combinando varios lenguajes de programación. :video_game:
  
  >I've developed my own version of classic hangman game in PHP, with CSS inserts for the style and Javascript for data validations.
- >It's my first PHP development combining some programming lenguages. :video_game:
+ >It's my first PHP development combining severals programming lenguages. :video_game:
 
 ## How to use it
 1. Descarga todo el proyecto, incluso las carpetas "Sources" y "Styles".
